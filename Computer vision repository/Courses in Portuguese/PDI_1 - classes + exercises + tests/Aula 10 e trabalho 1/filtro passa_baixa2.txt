@@ -1,0 +1,68 @@
+% imagem I
+I = imread('tabuleiro.tif' );
+
+I = double(I);
+[m,n] = size(I);
+
+% imagem de saída
+S = zeros(m,n);
+
+% definição do filtro F
+df= 7
+F=ones(df,df);
+F = F/(df*df);
+
+d1 = floor(df/2);
+d2 = ceil(df/2);
+
+for  i = d2:m-d1
+for  j = d2:n-d1
+
+	soma = 0;
+	for s = -d1:d1
+	for t = -d1:d1
+		soma = soma+ F(d2+s, d2+t) * I(i-s, j-t);
+	end
+	end
+		S(i,j) = round(soma);
+
+end
+end
+
+
+
+
+
+
+
+% imagem I
+I = imread('placa1.tif' );
+
+I = double(I);
+[m,n] = size(I);
+
+
+% filtro F quadrado com dimensão mf 
+mf = 3
+F = (-1) * ones(mf,mf)
+d2 = ceil(mf/2);
+F(d2,d2) = mf*mf-1;
+%F = F/(mf*mf)
+
+d1 = floor (mf/2)
+S = zeros(m,n);
+
+for  i = d2:m-d1
+for  j = d2:n-d1
+
+	soma = 0;
+	for k = -d1:d1
+	for l = -d1:d1
+		soma = soma+ F(d2+k, d2+l) * I(i+k, j+l);
+	end
+	end
+		S(i,j) = round(soma);
+
+end
+end
+

@@ -1,0 +1,1316 @@
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+h1,h2,h3,h4 {
+	font-weight: normal;
+}
+
+strong {
+	font-weight: bold;
+}
+
+
+.clear {
+	clear: both;
+	line-height: 1px;
+	height: 1px;
+	font: 1px;
+}
+
+.align-center {
+	text-align: center;
+}
+
+i {
+	font-style: italic;
+}
+
+/**********************************************************************************/
+
+@font-face {
+    font-family: 'century_gothicregular';
+    src: url('../fonts/century_gothic-webfont.eot');
+    src: url('../fonts/century_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/century_gothic-webfont.woff') format('woff'),
+         url('../fonts/century_gothic-webfont.ttf') format('truetype'),
+         url('../fonts/century_gothic-webfont.svg#century_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'century_gothicbold';
+    src: url('../fonts/4637.eot');
+    src: url('../fonts/4637.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/4637.woff') format('woff'),
+         url('../fonts/4637.ttf') format('truetype'),
+         url('../fonts/4637.svg#century_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+#main-menu ul a, .box-cedulas h1, .box-cedulas h3, .box-moedas-caracteristicas h1, .informacoes-moeda h1, .duvida a, .box-faq h1, .box-app-mobile h4, .cedulas-slides .text .label, .cedulas-slides .text .title, .box-aprenda-tambem .box-content h4, .btn, .header-conversor h1, .in-conversor label, .data-conversor, .resposta,
+.box-outros-links .titulo, .box-descubra .text h4
+{
+	font-family: 'century_gothicbold';
+}
+
+
+.box-cedulas h2, .box-moedas-caracteristicas h2, .box-moedas-caracteristicas h3, .informacoes-moeda p,.box-aprenda-tambem p, .box-app-mobile p, .box-faq-header h2, .caracteristicas, .cedulas-slides .text, 
+.box-descubra
+
+{
+	font-family: 'century_gothicregular';
+}
+
+
+
+
+
+
+
+/**********************************************************************************/
+
+body {
+	background: #cad1d4;	
+}
+
+#wrapper {
+	width: 1200px;
+	margin: auto;
+}
+
+
+#header {
+	background: #fff;
+	height: 49px;
+}
+
+#main-menu {
+	float: left;
+	width: 870px;
+	padding-left: 100px;
+}
+
+#main-menu li {
+	float: left;
+	position: relative;
+	height: 49px;
+	line-height: 49px;
+}
+
+
+#main-menu ul, #main-menu li {
+	position: relative;
+}
+
+
+#main-menu a {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#main-menu .sub-menu { 
+	background: #1E3959;
+	width: auto;
+	height: auto;
+	font-size: 13px;
+	visibility: hidden;
+	position: absolute;
+	top: 49px;
+	left: 0;
+	z-index: 99;
+}
+
+#main-menu .sub-menu li {
+	height: 40px;
+	text-align: center;
+	background: url("../img/submenu-division.jpg") no-repeat center bottom;
+}
+
+#main-menu .sub-menu li:last-child {
+	background: none;
+}
+
+#main-menu .sub-menu li a {
+	color: #fff;
+}
+
+#main-menu ul li:hover > ul {
+	visibility: visible;
+}
+
+
+#main-menu .main-menu-item {
+	background: url("../img/menu-division.jpg") no-repeat right center;
+}
+
+#main-menu a.main-menu-link {
+	background: url("../img/menu-arrow.jpg") no-repeat 0 center;
+	padding-left: 12px;
+	color: #487191;
+	font-size: 13px;
+	margin-left: 30px;
+	padding-right: 30px;
+}
+
+
+
+#main-menu a.sub-menu-link {
+	background: none;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+
+
+
+#main-menu #menu-cedulas {
+	/*width: 165px;*/
+	margin-left: 0;
+}
+
+#main-menu #menu-cedulas a {
+	margin-left: 0;
+}
+
+#menu-cedulas .sub-menu-item {
+	width: 200px;
+} 
+
+#main-menu #menu-moedas {
+	/*width: 165px;*/
+}
+
+#menu-moedas .sub-menu-item {
+	width: 200px;	
+}
+
+
+#menu-onde-trocar {
+	width: 183px;	
+}
+
+#main-menu #menu-informacoes-sobre-o-cambio {
+	/*width: 274px;*/
+	background: none;
+}
+
+
+#locale-flags {
+	width: 200px;
+	height: 45px;
+	float: right;
+	background: #487191;
+	border: 2px solid #FFF;
+}
+
+
+/*******************************************************/
+
+#content {
+	
+}
+
+.bg1 {
+	background: url("../img/bg.jpg") no-repeat;
+}
+
+
+.cedulas-bg {
+	background: url("../img/bg1.jpg") no-repeat;
+}
+
+
+.box-cedulas {
+	padding-top: 53px;
+	height: 493px;
+}
+
+.box-cedulas h1 {
+	font-size: 47px;
+	color: #487191;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+.box-cedulas.segunda-familia h1 {
+	margin-bottom: 5px;
+}
+
+.box-cedulas h2 {
+	font-size: 27px;
+	color: #1e3959;
+	text-align: center;
+}
+
+.box-cedulas h3 {
+	font-size: 22px;
+	color: #487191;
+	text-align: center;
+	margin: 50px auto 18px;
+	text-transform: uppercase;
+
+	background: url("../img/pontilhado_horizontal.png") repeat-x 0 bottom;
+	padding-bottom: 5px;
+	display: inline-block;
+	
+}
+
+
+.segunda-familia.box-cedulas h3 {
+	margin: 22px auto 23px;
+}
+
+
+
+.box-cedulas .cedulas {	
+	margin: 20px auto 0;
+	position: relative;
+}
+
+.primeira-familia .cedulas {
+	width: 1050px;
+}
+
+.primeira-familia .numero {
+	width: 1100px;
+	height: 200px;
+	position: absolute;
+	top: -21px;
+	left: -27px;
+	display: none;
+}
+
+.primeira-familia .numero1 {
+	background: url("../img/1_familia/detalhe1.png") no-repeat;
+	display: block;
+}
+
+.primeira-familia .numero2 {
+	background: url("../img/1_familia/detalhe2.png") no-repeat;
+}
+
+.primeira-familia .numero3 {
+	background: url("../img/1_familia/detalhe3.png") no-repeat;
+}
+
+.primeira-familia .numero4 {
+	background: url("../img/1_familia/detalhe4.png") no-repeat;
+}
+
+.primeira-familia .numero5 {
+	background: url("../img/1_familia/detalhe5.png") no-repeat;
+}
+
+
+
+
+.segunda-familia .cedulas {
+	width: 1095px;
+}
+
+.segunda-familia .numero {
+	width: 1122px;
+	height: 200px;
+	position: absolute;
+	top: -16px;
+	left: -13px;
+	display: none;
+}
+
+.segunda-familia .numero1 {
+	background: url("../img/2_familia/detalhe1-novo.png") no-repeat;
+	display: block;
+}
+
+.segunda-familia .numero2 {
+	background: url("../img/2_familia/detalhe2-novo.png") no-repeat;
+}
+
+.segunda-familia .numero3 {
+	background: url("../img/2_familia/detalhe3-novo.png") no-repeat;
+}
+
+.segunda-familia .numero4 {
+	background: url("../img/2_familia/detalhe4-novo.png") no-repeat;
+}
+
+.segunda-familia .numero5 {
+	background: url("../img/2_familia/detalhe5-novo.png") no-repeat;
+}
+
+.segunda-familia .numero6 {
+	background: url("../img/2_familia/detalhe6-novo.png") no-repeat;
+}
+
+
+
+.cedulas-info {
+	width: 1132px;
+	margin: auto;
+	position: relative;
+	height: 142px;
+}
+
+.cedulas-info .seta-esquerda {
+	background: url("../img/pontihado.png") no-repeat right center;
+	width: 15px;
+	height: 83px;
+	position: absolute;
+	top: 19px;
+	left: 0;
+	padding-right: 19px;
+}
+
+.cedulas-info .seta-esquerda a {
+	display: block;
+	background: url("../img/seta_esq.png") no-repeat center center;
+	width: 15px;
+	height: 83px;
+}
+
+
+.cedulas-info .seta-direita {
+	background: url("../img/pontihado.png") no-repeat left center;
+	width: 15px;
+	height: 83px;
+	top: 19px;
+	right: 0;
+	position: absolute;
+	padding-left: 19px;
+}
+
+.segunda-familia .cedulas-info .seta-direita, .segunda-familia .cedulas-info .seta-esquerda { 
+	top: 29px;
+}
+
+
+.cedulas-info .seta-direita a {
+	display: block;
+	background: url("../img/seta_dir.png") no-repeat center center;
+	width: 15px;
+	height: 83px;
+}
+
+
+.cedulas-slides, .cedulas-slide {
+	width: 1066px;
+	margin: auto;
+	
+}
+
+.segunda-familia .cedulas-slides, .cedulas-slide {
+	height: 142px;
+}
+
+
+.cedulas-slide {
+	display: none;
+}
+
+.cedulas-slide {
+	display: none;
+}
+
+.cedulas-slide1 {
+	display: block;
+}
+
+.cedulas-slides .text .label {
+	background: url("../img/label-blue.png") no-repeat center center;
+	line-height: 26px;
+	width: 26px;
+	height: 26px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	left: -35px;
+}
+
+.cedulas-slides .text .title {
+	color: #47708e;
+	font-size: 18px;
+	margin-bottom: 7px;
+	
+}
+
+.cedulas-slides .text {
+	color: #1e3959;
+	font-size: 13px;
+	line-height: 1.2;
+	float: left;
+	margin-right: 52px;
+	position: relative;
+}
+
+.cedulas-slides .image {
+	float: left;
+}
+
+
+
+
+.primeira-familia .cedulas-slide1 .text {
+	margin-left: 107px;
+	margin-top: 15px;
+	margin-right: 30px;
+}
+
+.primeira-familia .cedulas-slide1 .image {
+	margin-top: 23px;
+}
+
+
+.primeira-familia .cedulas-slide2 .text {
+	margin-left: 94px;
+	margin-top: 15px;
+	margin-right: 30px;
+}
+
+.primeira-familia .cedulas-slide2 .image {
+	margin-top: 10px;
+}
+
+
+.primeira-familia .cedulas-slide3 .text {
+	margin-left: 72px;
+	margin-top: 23px;
+	margin-right: 28px;
+}
+
+.primeira-familia .cedulas-slide3 .image {
+	margin-top: 40px;
+}
+
+.primeira-familia .cedulas-slide4 .text {
+	margin-left: 93px;
+	margin-top: 17px;
+	margin-right: 43px;
+}
+
+.primeira-familia .cedulas-slide4 .image {
+	margin-top: 10px;
+}
+
+
+.primeira-familia .cedulas-slide5 .text {
+	margin-left: 109px;
+	margin-top: 23px;
+	margin-right: 57px;
+}
+
+.primeira-familia .cedulas-slide5 .image {
+	margin-top: 30px;
+}
+
+
+
+
+.segunda-familia .cedulas-slide1 .text {
+	margin-left: 132px;
+	margin-top: 20px;
+	margin-right: 30px;
+}
+
+.segunda-familia .cedulas-slide1 .image {
+	margin-top: 42px;
+}
+
+
+.segunda-familia .cedulas-slide2 .text {
+	margin-left: 50px;
+	margin-top: 10px;
+	width: 518px;
+	margin-right: 0px;
+}
+
+.segunda-familia .cedulas-slide2 .image {
+	margin-top: 35px;
+}
+
+
+.segunda-familia .cedulas-slide3 .text {
+	margin-left: 60px;
+	margin-top: 39px;
+	margin-right: 39px;
+}
+
+.segunda-familia .cedulas-slide3 .image {
+	margin-top: 10px;
+}
+
+.segunda-familia .cedulas-slide4 .text {
+	margin-left: 132px;
+	margin-top: 39px;
+	margin-right: 60px;
+}
+
+.segunda-familia .cedulas-slide4 .image {
+	margin-top: 0px;
+}
+
+
+.segunda-familia .cedulas-slide5 .text {
+	margin-left: 128px;
+	margin-top: 33px;
+	margin-right: 31px;
+}
+
+.es_ES .segunda-familia .cedulas-slide5 .text {
+	margin-left: 45px;
+	margin-right: 8px;
+}
+
+.segunda-familia .cedulas-slide5 .image {
+	margin-top: 33px;
+}
+
+
+.segunda-familia .cedulas-slide6 .text {
+	margin-left: 83px;
+	margin-top: 27px;
+	margin-right: 15px;
+	width: 450px;
+}
+
+.segunda-familia .cedulas-slide6 .image {
+	margin-top: 0px;
+}
+
+
+.segunda-familia .cedulas-slide6 .text ul {
+	list-style: disc inside;
+}
+
+
+.primeira-familia.box-outros-links {
+	width: 1000px;
+}
+
+.box-descubra.box-descubra3 {
+	float: right;
+	margin-top: 59px;
+	margin-right: 1px;
+}
+
+.box-descubra3 .btns {
+	margin-top: 30px;
+}
+
+
+.box-outros-links {
+	width: 900px;
+	padding-top: 38px;
+	padding-bottom: 54px;
+	margin: auto;
+}
+
+.primeira-familia.box-outros-links {
+	padding-bottom: 35px;
+}
+
+
+.abaixo{
+	width: 100%;
+	height: 100%;
+	background: url("../img/bg-transparente.png") repeat;
+}
+.box-aprenda-tambem {
+	background: url("../img/pilha-moedas.png") no-repeat 3px 3px;
+	border: 1px solid #9abcd5;
+	width: 428px;
+	height: 158px;
+	float: left;
+	margin-right: 40px;
+}	
+
+.box-aprenda-tambem h4 {
+	color: #607f99;
+	font-size: 16px;
+	line-height: 21px;
+	margin-bottom: 10px;
+}
+.box-aprenda-tambem p {
+	color: #1e3959;
+	font-size: 13px;
+	margin: 8px 0 20px;
+	line-height: 1.3;
+	padding: 0 8px 0 0;
+}
+.box-aprenda-tambem .box-content {
+	padding-top: 16px;
+	padding-left: 148px;
+}
+
+.box-app-mobile {
+	background: url("../img/bg-aplicativo-novo.png") no-repeat 3px 3px;
+	border: 1px solid #9ABCD5;
+	width: 426px;
+	height: 157px;
+	float: left;
+}	
+
+.box-app-mobile h4 {
+	color: #607f99;
+	font-size: 16px;
+	line-height: 21px;
+	margin-bottom: 5px;
+}
+.box-app-mobile p {
+	color: #1e3959;
+	font-size: 12px;
+	margin: 4px 0 10px;
+	line-height: 1.3;
+	padding: 0 14px 0 0;
+}
+.box-app-mobile .box-content {
+	padding-top: 10px;
+	padding-left: 148px;
+}
+
+
+.box-conversor {
+	float: right;
+}
+
+
+
+
+.btn {
+	font-size: 12px;
+	color: #FFF;
+	text-transform: uppercase;
+	background: #487191;
+	padding: 8px 20px;
+	display: inline-block;
+	line-height: 12px;
+	text-decoration: none;
+}
+
+.btn-app{
+	display: inline-block;
+	width: 106px;
+	height: 36px;
+	background: url(../img/btn-app-store.png);
+	margin-right: 10px;
+}
+.btn-g-play{
+	display: inline-block;
+	width: 106px;
+	height: 36px;
+	background: url(../img/btn-google-play.png);
+}
+
+
+.btn-app2{
+	display: inline-block;
+	width: 133px;
+	height: 46px;
+	background: url(../img/apple-store2.png);
+	margin-right: 10px;
+}
+.btn-g-play2 {
+	display: inline-block;
+	width: 133px;
+	height: 46px;
+	background: url(../img/google-play2.png);
+}
+
+
+
+#footer {
+	height: 66px;
+	background: #487191 url("../img/rodape.jpg") no-repeat 0 0;
+	padding-top: 7px;
+}
+
+.footer-content {
+	width: 1004px;
+	margin: auto;
+}
+
+.logo-banco-central {
+	display: block;
+	width: 170px;
+	height: 40px;
+	background: url("../img/logo_banco_central.png") no-repeat;
+	float: left;
+	margin-top: 12px;
+}
+
+.logo-governo-federal {
+	/*display: block;*/
+	display: none;
+	width: 137px;
+	height: 56px;
+	background: url("../img/logo_gov_federal_novo.png") no-repeat;
+	float: right;
+	margin-top: -35px;
+}
+
+.en_US .logo-governo-federal {
+	width: 102px;
+	height: 31px;
+	background: url("../img/logo_gov_federal-en.png") no-repeat;
+	margin-top: 16px;
+	display: none;
+}
+
+.es_ES .logo-governo-federal {
+	width: 102px;
+	height: 31px;
+	background: url("../img/logo_gov_federal-es.png") no-repeat;
+	margin-top: 16px;
+	display: none;
+}
+
+.footer-direitos{
+	float: left;
+	color: #ffffff;
+	font-size: 11px;
+	width: 728px;
+	font-family: Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-top: 31px;
+}
+.footer-direitos a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-direitos div {
+	text-align: center;
+}
+
+
+
+/*familia moedas */
+.box-moedas-caracteristicas {
+		padding: 60px 0 60px 0;
+}
+.box-moedas-caracteristicas .box-moedas-header h1{
+	font-size: 38px;
+	color: #487191;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+.box-moedas-caracteristicas .box-moedas-header h2{
+	font-size: 23px;
+	color: #1e3959;
+	text-align: center;		
+}
+.box-moedas-caracteristicas h3{
+	font-size: 14px;
+	color: #487191;
+	text-align: center;		
+}	
+.box-moedas-caracteristicas h3 a{
+	text-decoration: none;
+	color: #1e3959;
+	font-weight: bold;
+}
+.caracteristicas{
+	margin: 34px auto;
+}
+.caracteristicas thead th{
+	background: #487191;
+	padding: 15px;
+	color: #fff;
+}
+.caracteristicas tbody th{
+	background: #FFF;
+	padding: 15px 9px 5px;
+	color: #1e3959;	
+}
+.caracteristicas tbody th.first{
+	text-align: left;
+}
+.caracteristicas tbody th small{
+	font-size: 12px;
+}
+.header-moedas{
+	width: 100%;
+	height: 20px;
+	padding: 10px 0;
+	background: #487191;
+	margin: 40px 0 50px 0;		
+}
+.header-moedas h1{
+	color: #fff;
+	font-size: 18px;
+	text-align: left;
+	margin-left: 96px;
+}
+.box-moedas{		
+	min-height: 210px; 
+	clear: both;
+}
+.box-anverso{
+	margin-left: 96px;
+	margin-right: 28px;
+	width: 490px;
+	min-height: 120px;		
+	float: left;	
+	margin-bottom: 40px;			
+}
+.box-reverso{
+	width: 490px;
+	height: 120px;		
+	float: left;	
+}
+.in-moeda{
+	width: 143px;
+	height: 143px;	
+	float: left;
+	margin-right: 30px;
+}
+.in-moeda.p-familia{
+	background: url(../img/1_familia_moedas2.png);
+}
+.in-moeda.s-familia{
+	background: url(../img/2_familia_moedas.png);
+}
+.informacoes-moeda{
+	min-height: 128px;
+	margin-top: 10px;		
+	float: left;
+	width: 315px;
+}
+.duvida{
+	width: 670px;
+	margin: 200px auto 0;
+	padding-bottom: 80px;
+}
+.duvida h2{
+	color: #535353;
+	font-size: 14px;
+	padding-top: 5px;
+	line-height: 1.5;
+}
+.duvida a{
+	color: #487191;
+	font-size: 14px;
+	text-decoration: none;
+}
+.ico-duvida{
+	background: url(../img/icone_duvida.png);
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+	float: left;
+	margin-right: 10px;
+}
+.informacoes-moeda h1{
+	font-size: 18px;
+	color: #487191;
+	margin-bottom: 10px;
+}
+.informacoes-moeda p{
+	font-size: 14px;
+	color: #1e3959;
+	line-height: 1.6;
+}
+.box-anverso .in-moeda.p-familia.um-centavo{
+	background-position: 0px 0px; 
+}
+.box-reverso .in-moeda.p-familia.um-centavo{
+	background-position: -538px 0px; 
+}
+.box-anverso .in-moeda.p-familia.cinco-centavos{
+	background-position: 0px -248px; 
+}
+.box-reverso .in-moeda.p-familia.cinco-centavos{
+	background-position: -538px -248px; 
+}
+.box-anverso .in-moeda.p-familia.dez-centavos{
+	background-position: 0px -508px; 
+}
+.box-reverso .in-moeda.p-familia.dez-centavos{
+	background-position: -538px -508px; 
+}
+.box-anverso .in-moeda.p-familia.v-cinco-centavos{
+	background-position: 0px -797px; 
+}
+.box-reverso .in-moeda.p-familia.v-cinco-centavos{
+	background-position: -538px -796px; 
+}
+.box-anverso .in-moeda.p-familia.cinquenta-centavos{
+	background-position: 0px -1077px; 
+}
+.box-reverso .in-moeda.p-familia.cinquenta-centavos{
+	background-position: -538px -1077px; 
+}
+.box-anverso .in-moeda.p-familia.um-real{
+	background-position: 0px -1351px; 
+}
+.box-reverso .in-moeda.p-familia.um-real{
+	background-position: -538px -1351px; 
+}
+/* moedas segunda familia */
+.box-anverso .in-moeda.s-familia.um-centavo{
+	background-position: 0px 0px; 
+}
+.box-reverso .in-moeda.s-familia.um-centavo{
+	background-position: -556px 0px; 
+}
+.box-anverso .in-moeda.s-familia.cinco-centavos{
+	background-position: 0px -248px; 
+}
+.box-reverso .in-moeda.s-familia.cinco-centavos{
+	background-position: -573px -248px; 
+}
+.box-anverso .in-moeda.s-familia.dez-centavos{
+	background-position: 0px -650px;
+}
+.box-reverso .in-moeda.s-familia.dez-centavos{
+	background-position: -554px -650px; 
+}
+.box-anverso .in-moeda.s-familia.v-cinco-centavos{
+	background-position: 0px -947px; 
+}
+.box-reverso .in-moeda.s-familia.v-cinco-centavos{
+	background-position: -562px -947px; 
+}
+.box-anverso .in-moeda.s-familia.cinquenta-centavos{
+	background-position: 0px -1230px; 
+}
+.box-reverso .in-moeda.s-familia.cinquenta-centavos{
+	background-position: -553px -1230px; 
+}
+.box-anverso .in-moeda.s-familia.um-real{
+	background-position: 0px -1564px; 
+}
+.box-reverso .in-moeda.s-familia.um-real{
+	background-position: -573px -1564px; 
+}
+
+/* conversor de moedas */
+.conversor{
+	width: 297px;
+	height: 149px;
+	border: 1px solid #94b8d2;
+	padding: 4px;
+}
+.header-conversor{
+	width: 295px;
+	height: 18px;
+	margin: 0 auto;
+	padding: 10px 0;
+	background: #518eba;
+	color: #fff;
+	text-align: center; 
+}
+.in-conversor{
+	margin-top: 15px;
+}
+.in-conversor label{
+	width: 190px;
+	display: inline-block;
+	padding: 6px;
+	font-size: 13px;
+}
+.conversor .valor{
+	width: 60px;
+	height: 20px;		
+	background: none;
+	border: 1px solid #518eba;
+	color: #518eba;
+	text-align: right;
+	padding-right: 5px;		
+}
+.ico-BRL{
+	background: url(../img/brasil.jpg);
+	display: inline-block;
+	width: 24px;
+	height: 19px;
+	vertical-align: middle;
+}
+.ico-USD{
+	background: url(../img/eua.jpg);
+	display: inline-block;
+	width: 24px;
+	height: 19px;
+	vertical-align: middle;
+}
+.ico-EUR{
+	background: url(../img/europa.jpg);
+	display: inline-block;
+	width: 24px;
+	height: 19px;
+	vertical-align: middle;
+}
+.data-conversor{
+	font-size: 10px;
+	color: #2d6793;
+	text-decoration: underline;
+	text-align: right;
+	margin-top: 5px;
+}
+.in-flags{
+	margin: 11px 0 0 29px;
+	/*display: none;*/
+}
+.idioma-pt{
+	background: url(../img/band_brasil.png);
+	width: 28px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.idioma-pt.active{
+	background: url(../img/band_brasil_selecionada.png);
+	width: 31px;
+	height: 23px;
+	display: inline-block;
+}
+.idioma-en{
+	background: url(../img/band_eua.png);
+	width: 28px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.idioma-en.active{
+	background: url(../img/band_eua_selecionada.png);
+	width: 31px;
+	height: 23px;
+	display: inline-block;
+}
+.idioma-es{
+	background: url(../img/band_espanha.png);
+	width: 28px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.idioma-es.active{
+	background: url(../img/band_espanha_selecionada.png);
+	width: 31px;
+	height: 23px;
+	display: inline-block;
+}
+
+/* box faqs */
+.box-faq {
+	padding: 60px 112px;	
+}
+.box-faq .box-faq-header h1{
+	font-size: 38px;
+	color: #487191;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+.box-faq .box-faq-header h2{
+	font-size: 23px;
+	color: #1e3959;
+	text-align: center;		
+}
+.box-faq .box-info{
+	padding: 26px 0 26px 54px;
+	width: 100%;
+	min-height: 25px;
+	background: #487191;
+	margin-bottom: 10px;	
+}
+.tema{
+	color: #487191;
+	font-size: 23px;
+	margin: 30px 0 8px;
+}
+.pergunta {
+	min-height: 25px;
+	width: 100%;
+}
+
+.pergunta h1 {
+	line-height: 1.2;
+}
+
+.pergunta .fechar-faq{
+	width: 24px;
+	height: 24px;
+	background: url(../img/fechar-faq.png);
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+.pergunta .abrir-faq {
+	background: url(../img/abrir-faq.png);
+}
+.resposta {	
+	margin-top: 18px;
+	clear: both;
+}
+
+.resposta {
+	line-height: 1.2;
+} 
+
+
+.resposta a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.box-faq .box-info .pergunta h1 {
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	float: left;
+	width: 920px;
+	cursor: pointer;
+}
+
+.resposta {
+	font-size: 18px;
+	width: 920px;
+	color: #b7d9f4;
+	font-size: 18px;
+	display: none;
+	float: none;
+}
+/* fim box faqs */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-outros-links .titulo {
+	font-size: 22px;
+	color: #487191;
+	text-align: center;
+	margin: 10px auto 22px;
+	text-transform: uppercase;
+	background: url("../img/pontilhado_horizontal.png") repeat-x 0 bottom;
+	padding-bottom: 5px;
+	display: inline-block;
+}
+
+
+.box-outros-links .col1 {
+	width: 671px;
+	float: left;
+	background: url("../img/pontilhado-vertical2.png") repeat-y 670px 0;
+	padding-bottom: 38px;
+}
+
+.box-outros-links .col2 {	
+	width: 319px;
+	float: right;
+}
+
+
+
+.box-descubra {
+	width: 316px;
+	height: 355px;
+	border: 1px solid #95b8d2;
+	color: #1e3959;
+	float: left;
+	font-size: 13px;
+}
+
+.box-descubra.left {
+	
+}
+
+.box-descubra.right {
+	float: right;
+	margin-right: 11px;
+}
+
+.box-descubra .img {
+	background: #fff;
+	margin: 1px;
+	padding: 15px 0;
+	text-align: center;
+}
+
+.box-descubra.box-descubra3 .img {
+	padding: 18px 0;
+}
+
+.box-descubra img {
+	margin-bottom: 5px;
+}
+
+
+.box-descubra .text {
+	padding: 13px 18px;
+	line-height: 1.5;
+}
+.box-descubra .text li{
+	margin-top: 5px;	
+}
+
+.box-descubra .text h4 {
+	color: #6899be;
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+
+.box-descubra .text p {
+	line-height: 1.3;
+}
+
+.box-descubra .text ul {
+	line-height: 1.3;
+	list-style: inside disc;
+}
+	

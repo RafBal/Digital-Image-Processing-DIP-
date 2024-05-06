@@ -1,0 +1,36 @@
+% imagem I
+I = imread('tabuleiro.tif' );
+
+I = double(I);
+[m,n] = size(I);
+
+% imagem de saída
+S = zeros(m,n);
+
+% definição do filtro F
+df= 3
+M= [ -1 -1 -1; -1 8 -1; -1 -1 -1]
+M = M/8;
+
+d1 = floor(df/2);
+d2 = ceil(df/2);
+
+for  i = d2:m-d1
+for  j = d2:n-d1
+
+	soma = 0;
+	for s = -d1:d1
+	for t = -d1:d1
+		soma = soma+ M(d2+s, d2+t) * I(i-s, j-t);
+	end
+	end
+		S(i,j) = round(soma);
+
+end
+end
+
+
+
+
+
+
